@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- AOS Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--Link ke css-->
+    <link rel="stylesheet" href="css/style.css" />
+    <!--poppins-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comforter&family=Outfit:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portofolio | risky </title>
+  </head>
+  <body>
+    <nav>
+      <div class="title">
+      <a href="#">Risky saharis</a>
+      </div>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+      </div>
+    </nav>
+
+    <div class="container-profil">
+    <div class="fotoprofil">
+        <img src="img/riski.jpg" />
+      </div>
+
+    <div class="deskprofil">
+        <h1>Risky</h1>
+        <p>
+          Saya adalah seorang mahasiswa Teknik Rekayasa Sistem Komputer di Universitas 
+          Muhammadiyah. Kemampuan lain saya adalah desain grafis, editing video, vidio vlog, dan mekanik.
+        </p>
+      </div>
+    </div>
+
+    <section id="about">
+      <div class="container-about">
+        <div class="aboutme">
+          <h1>ABOUT ME</h1>
+          <p>
+            Nama lengkap saya Risky Saharis. Umur saya sekarang 20 Tahun. Saya lahir di Pasarwajo, Sulawesi tenggara. Saat ini berdomisili di
+            Kabupaten buton, Sulawesi tenggara. Saya merupakan salah satu Mahasiswa di Kampus
+            Universitas Muhammadiyah Buton dengan Prodi Teknik Rekayasa Sistem Komputer. Hobi yang saya
+            suka yaitu, Desain, sepak bola dan mekanik.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  <script>
+      document.addEventListener("scroll", function () {
+        const navbar = document.querySelector("nav");
+
+        if (this.body.scrollTop > 1 || this.documentElement.scrollTop > 1) {
+          navbar.classList.add("nav-scrolled", "fixed-top");
+        } else {
+          navbar.classList.remove("nav-scrolled", "fixed-top");
+        }
+      });
+    </script>
+  </body>
+</html>
